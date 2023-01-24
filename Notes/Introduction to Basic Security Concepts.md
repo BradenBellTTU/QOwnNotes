@@ -83,3 +83,28 @@ Introduction to Basic Security Concepts
     + In transit
     + In storage
 + **People**
+
+### Privacy Goal
++ Protection and proper handling of sensitive personal information to control the *access of others to self*
++ Privacy is a right of individuals
+    + Confidentiality can relate to individuals, organizations, assets
++ Privacy and security are distinct elements (related by cannot be interchanged in usage) - consider https://us.norton.com/internetsecurity-privacy-privacy-vs-security-whats-the-difference.html
+
+#### Privacy Vs. Security
++ When you share personal info with your bank when you open a checking account here are some outcomes:
+    + **Your privacy and security are maintained** - the bank uses your info to open your account and provide you with products and services. They go on to protect your data.
+    + **Your privacy is compromised and security is maintained** - The bank sells some of your info to a marketer. Note: you may have agreed to this in the bank's privacy disclosure.
+    + **Both your privacy and security are compromised** - The bank gets hit by a *data breach*. Cybercriminals penetrate a bank database, a *security breach*. Your info is exposed and could be sold on the dark web; your privacy is gone.
+
+### Defense in Depth Background
++ Consider the following article: https://www.cisa.gov/uscert/bsi/articles/knowledge/principles/defense-in-depth
++ Security in layers... layered security
++ We will never be able to develop a single, perfect security mechanism that cannot be compromised. GIven enough time and talent, all security can be broken
++ The question is "can we create a layering security mechanisms such that an object cannot be obtained during its useful lifetime?"
+
+#### The NIST Five Functions  [important for quiz]
+1. **Identify** - developing an organizational understanding to managing cybersecurity risk
+2. **Protect** - Outlining appropriate safeguards to ensure delivery of critical infrastructure services
+3. **Detect** - Defining the appropriate activities to identify the occurrence of an event
+4. **Respond** - Supporting the ability to contain the impact of an incident
+5. **Recover** - Identifying appropriate activities to maintain plans for resilience and to restore capabilities or services that were impaired due to an incident
