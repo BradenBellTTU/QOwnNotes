@@ -98,3 +98,9 @@ int main() {
 + A CPU has an **instruction set**
 + Various models of CPUs that implement the same instruction set may have different implementations of that instruction set (with different optimizations)
     + They have different **microarchitectures**
+
+
+### Return to Hello World
++ So what happens when we run our example program?
++ The shell:
+    + As we type the characters ./hello at the keyboard the shell program reads each one into a register and stores it in memory
