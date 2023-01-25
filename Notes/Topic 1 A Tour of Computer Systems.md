@@ -57,7 +57,7 @@ int main() {
     + Executable object program (binary)
 
 ### It Pays To Understand How Compilation Works
-+ Understanding compilation helps us:
++ Understanding compilation helps us
     + Optimize program performance
     + Understanding link-time errors
     + Avoiding security holes
@@ -72,3 +72,21 @@ int main() {
 
 ### Hardware Organization of a System
 ![HordwareOrgSys](media/HordwareOrgSys.png)
+
+### Main Memory
++ The main memory is a temporary storage device that holds both a program and the data it manipulates while the processor is executing the program
+    + Main memory holds both data and code
++ Physically, main memory consists of a collection of *dynamic random access memory* (or DRAM) chips
++ Logically, memory is organized as a linear array of bytes, each with its own unique address (array index) starting at zero
++ Each of the machine instructions that constitute a program can consist of a variable number of bytes
++ The sizes of data items that correspond to C program variables vary according to type
+    + On a X86-64, a short is two bytes, an int is 4 bytes, a long is 8 bytes, a long long is 8 bytes, a float is 4 bytes, and a double is 8 bytes
+    + Windows is an exception (of course). A long on Windows is 4 bytes long.
+
+### Processor
++ The **central processing unit (CPU)**, or simply processor, is the engine that interprets (or executes) instructions stored in main memory
++ It has a word-size register called the **program counter (PC)**
++ The PC points at (contains the address of) some machine-language instruction in main memory
++ The processor repeatedly executes the instruction pointed at by the program counter
+    + From the time that power is applied to the system until the time the power is shut off
++ After executing an instruction, the processor updates the program counter to point to the next instruction 
