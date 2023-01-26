@@ -1,0 +1,24 @@
+Note
+========================
+
+### Overview
++  Simplicity
+    +  Less to go wrong, less to check
+    +  Fewer possible inconsistencies
+    +  Easy to understand
++  Restriction
+    +  Minimize access/interactions
+    + Inhibit communication
+
+### The Principles
++ Least priviledge
++ Fail-safe defaults
++ Economy of mechanism
++ Seperation of privilages
++ Complete mediation
++ Open design
++ Least common mechanism
++ Psycological acceptability
++ There are 2 more but we will not focus on
+    + Work factor
+    + Compromise recording

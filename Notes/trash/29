@@ -57,7 +57,7 @@ Introduction to Basic Security Concepts
     +    Likelihood of ?
 
 #### General Classes of Threats
-+ **Disclusure** - unauthorized access to information
++ **Disclosure** - unauthorized access to information
 + **Deception** - presentation/acceptance of false data
 + **Disruption** - interruption or prevention of correct operation
 + **Usurpation** - unauthorized control of some part of a system
@@ -79,7 +79,7 @@ Introduction to Basic Security Concepts
 + **Hardware**
 + **Software**
 + **Data**
-    + In processing
+    + In processing 
     + In transit
     + In storage
 + **People**
@@ -96,10 +96,10 @@ Introduction to Basic Security Concepts
     + **Your privacy is compromised and security is maintained** - The bank sells some of your info to a marketer. Note: you may have agreed to this in the bank's privacy disclosure.
     + **Both your privacy and security are compromised** - The bank gets hit by a *data breach*. Cybercriminals penetrate a bank database, a *security breach*. Your info is exposed and could be sold on the dark web; your privacy is gone.
 
-### Defense in Depth Background
+### Defence in Depth Background
 + Consider the following article: https://www.cisa.gov/uscert/bsi/articles/knowledge/principles/defense-in-depth
 + Security in layers... layered security
-+ We will never be able to develop a single, perfect security mechanism that cannot be compromised. GIven enough time and talent, all security can be broken
++ We will never be able to develop a single, perfect security mechanism that cannot be compromised. Given enough time and talent, all security can be broken
 + The question is "can we create a layering security mechanisms such that an object cannot be obtained during its useful lifetime?"
 
 #### The NIST Five Functions  [important for quiz]
@@ -108,3 +108,14 @@ Introduction to Basic Security Concepts
 3. **Detect** - Defining the appropriate activities to identify the occurrence of an event
 4. **Respond** - Supporting the ability to contain the impact of an incident
 5. **Recover** - Identifying appropriate activities to maintain plans for resilience and to restore capabilities or services that were impaired due to an incident
+
+
+
+
+
+
+
+
+
+
+
