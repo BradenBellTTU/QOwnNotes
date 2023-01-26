@@ -13,14 +13,14 @@
 
 <!-- Important for Quiz! -->
 ### The Principles*
-+ **Least priviledge**
-+ **Fail-safe defaults**
-+ **Economy of mechanism**
-+ **Seperation of privilage**
-+ **Complete mediation**
-+ **Open design**
-+ **Least common mechanism**
-+ **Psycological acceptability**
++ **Least priviledge** - No more privlege than needed
++ **Fail-safe defaults** - No default permit
++ **Economy of mechanism** - No Excessive Complexity
++ **Seperation of privilage** - No single responsible party
++ **Complete mediation** - No bypass
++ **Open design** - No secrecy
++ **Least common mechanism** - No sharing
++ **Psycological acceptability** - No hardship/suprises
 + There are 2 more but we will not focus on
     + Work factor
     + Compromise recording
@@ -70,3 +70,26 @@
 + Require multiple conditions to grant privilege/access
     + Seperation of duty
     + Defense of depth
+
+#### Least Common Mechanism
++ Mechanisms/Resources should not be shared
+    + Information can flow alog shared channels
+    + Covert channels
++ Isolation
+    + Virtual machines
+    + Sandboxes
+
+#### Psycological Acceptability
++ Security mechanisms should not add to difficulty of accessing resource
+    + Hide complexity introduced by security mechanisms
+    + Ease of installation, config, and use
++ Principle of Least Astonishment
+    + Mechanisms should be designed so that users understand the reason the mechanism works the way it does and its simple to understand
+        + The result of performing some operation should be obvious, consistent, and predictable
+
+### Key Points
++ Principles of secure design underlie all security-related mechanisms
++ Require:
+    + Good understanding of goal of mechanism and environment i nwhich it is to be used
+    + Careful analysis and design
+    + Careful implementation
