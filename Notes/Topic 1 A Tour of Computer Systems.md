@@ -150,4 +150,45 @@ int main() {
     + Network servers require concurrency, and it's easier to share data between multiple threads than between multiple processes
     + Switching between threads in a process is less computationally expensive than switching between processes.
 
+## Virtual Memory
++ Do __NOT__use the definition of virtual memory in the book
++ It is true that an OS makes it look like, to a process, that it has the computer's memory all to itself
+    + Due to process isolation and logical addressing, usually implemented with paging
++ However, firtual memory makes it look, to the process, that there is more RAM than there actually is
++ So, why is virtual memory good?
+    + More multiprogramming (more programs in memory at once) means more concurrency to keep the processor and devies busy
+    + During peak times (when memory utilization is high), the OS can still keep the processess running (instead of kicking them out)
++ How is virtual memory implemented? By using secondary storage to temporarily hold pieces of RAM so that an entire process does not need to be in memory at one time
 
+## Memory Organization
++ The address space seen by each process consists of a number of well-defined areas, each with a specific purpose:
+    + Program code
+    + Program data
+    + Program heap
+    + Shared libraries
+    + Stack
+
+## Files
++ A file is a sequence of bytes
++ In unix, every I/O device, including disks, keyboards, displays, and even networks, is modeled as a file
+    + Most general purpose OSs mirror this behavior to an extent, even Windows
+    + Of course, all modern OSs borrow many concepts from Unix
++ All input and output in the system is performed by reading and writing files
+
+
+    + Using a small set of system calls known as Unix I/O
++ This simple and elegant moddel of a file is nonethless very powerful
+    + It provides applications with a uniform view of all th evaried I/O devices that might be contained in the system
+
+
+## Systems Communicate with Other Systems Using Networks
+![qownnotes-media-qydiVW](media/qownnotes-media-qydiVW.png)
+
+## Concurrency & Parallelism
++ We want computers to do more and do it faster
++ Both of these factors improve when the process does more things at once
++ We use the term concurrency to refer to the general concept of a system with multiple, simultaneous activites
+    + Those activites can be happening in parallel, but not necessarily
++ We use the term parallelism to refer to the use of conurrency to make a system run faster
+    + In this case, the computer is actually executing instruction simultaneously, typing by using more than one core processor
++ Parallelism can be exploited at multiple levels of abstraction in a computer system
