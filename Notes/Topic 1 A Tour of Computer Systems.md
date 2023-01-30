@@ -140,7 +140,7 @@ int main() {
 + Concurrency: Two or more programs are active in the computer system
     + IF the computer system has more programs active then there are processors, then the instructions of the process interleaved on the processors
     + The OS performs this interleaving with a mechanism known as **context switching**
-        + ![context-switching](media/context-switching.png)
+![context-switching](media/context-switching.png)
 
 ### Threads
 + By default, a process has a single point of execution
