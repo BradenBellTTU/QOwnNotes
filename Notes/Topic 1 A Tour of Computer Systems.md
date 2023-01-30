@@ -142,4 +142,12 @@ int main() {
     + The OS performs this interleaving with a mechanism known as **context switching**
         + ![context-switching](media/context-switching.png)
 
+### Threads
++ By default, a process has a single point of execution
++ However, a process can actually consist of multiple execution units, called threads
++ All the threads in a process share the same code and global data
++ Threads are an increasingly important programming model
+    + Network servers require concurrency, and it's easier to share data between multiple threads than between multiple processes
+    + Switching between threads in a process is less computationally expensive than switching between processes.
+
 
