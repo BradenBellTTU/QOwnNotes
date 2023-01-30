@@ -104,3 +104,42 @@ int main() {
 + So what happens when we run our example program?
 + The shell:
     + As we type the characters ./hello at the keyboard the shell program reads each one into a register and stores it in memory
+    + When we hit the entery key on the keyboard, the shells knows that we have finished typing the command
+    + The shell then asks the OS to run the hello executable file into main memory
+    + The processor then begins executing the machine-language instructions in the hello program's main routine
+    + These instructions copy the address of the hello string into a register and then calls the OS to print the string
+    + The OS then prints the string
+
+### Caching
++ As can be seen from the pervious example, a program can spend a lot of its time moving data around
++ For another example considering reading a file
+    + Each access of the disk device takes a lot of time (from the processor's point of view)
++ To speed things up, the OS will do a bulk read from the slow disk device into faster memory caleld *cache*
++ Then each subsequent access to the file reads the requested bytes from the fast cache instead of the slow device
+
+### Storage Devices Form a Hierarchy
+![storage-hierarchy](media/storage-hierarchy.png)
+
+
+### The OS Manages the Hardware
++ Neither the shell or the hello program from our example accessed I/O devices directly
++ They relied on the services provided by the **operating sytem (OS)**
++ All attemps by an application to manipulate the hardware must go through the OS.
++ The OS has 2 primary purposes:
+    1. To efficiently and safely provide hardware and software resouces to the applications (the resource management principle)
+    2. To Provide applications with simple and uniform mechanisms for manipulating complicated and often wildly different low-level hardware devices (the beautification principle)
++ The OS achieves both goals via the fundamental abstractions: **processes**, **virtual memory**, and **files**
+
+
+### Processes
++ When a program such as hello runs on a modern system, the OS provides the illusion that the program is the only one running on the system
+    + As if the program has exclusive access to the processor, memory, and devices, however this is an illusion
++ This illusion is provided by the notion of a process
++ A process is the OS's abstraction for a running program
++ Multiple processes can run concurrently on the same system, and each process appears to have exclusive use of the hardware
++ Concurrency: Two or more programs are active in the computer system
+    + IF the computer system has more programs active then there are processors, then the instructions of the process interleaved on the processors
+    + The OS performs this interleaving with a mechanism known as **context switching**
+        + ![context-switching](media/context-switching.png)
+
+
