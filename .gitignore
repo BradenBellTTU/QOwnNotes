@@ -2,4 +2,4 @@
 Notes/trash/
 
 #Ignore update script for security purposes
-update-notes.sh
+Notes/update-notes.sh
