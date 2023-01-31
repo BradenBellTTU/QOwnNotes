@@ -1,0 +1,5 @@
+#Ignore trash dir
+Notes/trash/
+
+#Ignore update script for security purposes
+update-notes.sh
